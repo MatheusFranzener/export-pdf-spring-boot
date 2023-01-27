@@ -70,4 +70,30 @@ public class PdfGenerator {
         // Closing the document
         document.close();
     }
+
+//    public void generateDemanda(Demanda demanda,  HttpServletResponse response) throws  DocumentException, IOException{
+//
+//        Document document = new Document(PageSize.A4);
+//
+//        PdfWriter.getInstance(document, response.getOutputStream());
+//
+//        document.open();
+//
+//        Font fontTiltle = FontFactory.getFont(FontFactory.TIMES_ROMAN);
+//        fontTiltle.setSize(20);
+//
+//        Paragraph paragraph1 = new Paragraph("Demanda 01", fontTiltle);
+//        paragraph1.setAlignment(Paragraph.ALIGN_CENTER);
+//        document.add(paragraph1);
+//
+//        Paragraph paragraph2 = new Paragraph("Título: ", fontTiltle);
+//        paragraph2.setAlignment(Paragraph.ALIGN_LEFT);
+//        document.add(paragraph2);
+//
+//        Paragraph paragraph3 = new Paragraph(demanda.getTitulo(), fontTiltle);
+//        paragraph3.setAlignment(Paragraph.ALIGN_LEFT);
+//        document.add(paragraph3);
+//
+//        document.close();
+//    }
 }
